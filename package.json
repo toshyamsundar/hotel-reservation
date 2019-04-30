@@ -1,0 +1,22 @@
+{
+  "name": "hotel-reservation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toshyamsundar/hotel-reservation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toshyamsundar/hotel-reservation/issues"
+  },
+  "homepage": "https://github.com/toshyamsundar/hotel-reservation#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
