@@ -1,8 +1,7 @@
 var express = require("express");
-var path = require("path");
 
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 //middleware
 app.use(express.urlencoded({ extended: true }));
@@ -20,6 +19,16 @@ app.get("/api/reservation", function (req, res) {
 app.get("/api/waitlist", function (req, res) {
     return res.json(wait);
 });
+
+//logic
+if (reserve.length > 5) {
+    //post request
+    //add to reserve array
+    //prompt user successfully added reservation
+} else {
+    //add to wait array
+    //prompt user on waitlist
+}
 
 //listen
 app.listen(PORT, function () {
